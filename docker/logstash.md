@@ -34,4 +34,15 @@ output {
   stdout { codec => rubydebug }
 }
 
+
+/usr/share/logstash/config/logstash.yml
+http.host: "0.0.0.0"
+xpack.monitoring.elasticsearch.hosts: [ "http://167.71.173.154:9200" ]
+
+
+/usr/share/logstash/pipeline/logstash.conf
+
+docker run -d -p 9600:9600 -p 5044:5044 -v /root/logstashfiles/logstash.yml:/usr/share/logstash/config/logstash.yml -v /root/logstashfiles/logstash.conf:/usr/share/logstash/pipeline/logstash.conf cc67e625d974
+
+
 ```
