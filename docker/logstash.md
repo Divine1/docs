@@ -45,4 +45,8 @@ xpack.monitoring.elasticsearch.hosts: [ "http://167.71.173.154:9200" ]
 docker run -d -p 9600:9600 -p 5044:5044 -v /root/logstashfiles/logstash.yml:/usr/share/logstash/config/logstash.yml -v /root/logstashfiles/logstash.conf:/usr/share/logstash/pipeline/logstash.conf cc67e625d974
 
 
+docker run -d -p 9600:9600 -p 5044:5044 -v /home/elkuser/elkstack/softwares/logstash_file_docker/logstash.yml:/usr/share/logstash/config/logstash.yml -v /home/elkuser/elkstack/softwares/logstash_file_docker/pipeline-final.conf:/usr/share/logstash/pipeline/logstash.conf cc67e625d974
+
+
+
 ```
