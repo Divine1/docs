@@ -13,6 +13,10 @@ for(let begin=0;begin<48;begin++){
 console.log("timeframes ",timeframes)
 console.log("timeframes.length ",timeframes.length)
 
+```
+Output
+
+```
 timeframes  [
   { gt: '2020-10-21T00:00:00.000Z', lt: '2020-10-21T00:29:59.999Z' },
   { gt: '2020-10-21T00:30:00.000Z', lt: '2020-10-21T00:59:59.999Z' },
